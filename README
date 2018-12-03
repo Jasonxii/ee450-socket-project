@@ -1,0 +1,35 @@
+a. Name: Xi zhu
+b. ID: 6771918491
+c. Done:
+	1. I have achieved all of the requirements.
+	2. I used the mixed of c and c++ to code
+	3. I debuged all the codes.
+	4. I finished compiling.
+d. files:
+	1. client.cpp: client part
+	2. aws.cpp: aws part
+	3. serverA.cpp: serverA part
+	4. serverB.cpp: serverB part
+	5. serverC.cpp: serverC part
+	6. monitor.cpp: monitor part
+	7. unioninfo.h: all defined info
+	8. Makefile: compile codes
+	9. README
+e. All of the exchanged messages are in char[].
+	1. the client to the aws: char[]
+	(link_id+" "+size+" "+power+" ")
+	2. the aws to the serverA or serverB: char[]
+	(link_id+" ")
+	3. the serverA or serverB to the aws: char[]
+	" "(not found) or (link_id,bandwidth,length,velocity,noise_power+" ")
+	4. the aws to the serverC: char[]
+	" "(not found) or (link_id,bandwidth,length,velocity,noise_power+" "+link_id+" "+size+" "+power+" ")
+	5. the serverC to the aws: char[]
+	" "(not found) or (Tt+" "+Tp+" "+delay+" ")
+	6. the aws to the client: char[]
+	" "(not found) or (Tt+" "+Tp+" "+delay+" ")
+	7. the aws to the monitor: char[]
+	(link_id+" "+size+" "+power+" ") ---------------the first time 
+	" "(not found) or (Tt+" "+Tp+" "+delay+" ")-----the second time
+
+

@@ -1,0 +1,21 @@
+#ifndef UNION_INFO_H
+#define UNION_INFO_H
+
+
+
+#define AWS_CLIENT_PORT 25491
+#define AWS_MONITOR_PORT 26491
+#define AWS_UDP_PORT 24491
+#define SERVERA_PORT 21491
+#define SERVERB_PORT 22491
+#define SERVERC_PORT 23491
+#define LOCALHOST "localhost"
+#define MAXSIZE 255
+#define SINGLESIZE 32
+
+
+
+
+
+
+#endif
